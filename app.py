@@ -17,7 +17,7 @@ with st.sidebar:
     
     total_cells_input = st.text_input(
         "총 세포 수 (X.XX E 6 형식 또는 숫자)",
-        placeholder="예: 10 E 6 또는 10000000"
+        placeholder="예: 5.5 E 6 또는 5500000"
     )
     
     suspension_vol = st.number_input(
@@ -173,7 +173,7 @@ if calculate_btn:
 # 참고사항
 with st.expander("📌 참고사항"):
     st.markdown("""
-    - **세포 수 입력**: "10 E 6" (=10×10⁶) 또는 "1.5 E 7" (=1.5×10⁷) 형식 사용 가능
+    - **세포 수 입력**: "5.5 E 6" (=5.5×10⁶) 또는 "1.2 E 7" (=1.2×10⁷) 형식 사용 가능
     - **분배 비율**: 오가노이드 시딩 후 남은 세포의 70%는 Stock, 30%는 Pellet
     - **Stock 전략**: 바이알 수가 5~6개 정도가 되도록 200만개/100만개/50만개 중 자동 선택
     - **Pellet 전략**: Stock과 짝을 맞춤
